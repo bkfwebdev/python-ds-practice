@@ -1,3 +1,6 @@
+from typing import type_check_only
+
+
 def multiply_even_numbers(nums):
     """Multiply the even numbers.
     
@@ -12,3 +15,9 @@ def multiply_even_numbers(nums):
         >>> multiply_even_numbers([1, 3, 5])
         1
     """
+    the_seed = 1
+    for number in nums:
+     if number % 2 == 0:
+         the_seed = the_seed * number
+
+    return the_seed
